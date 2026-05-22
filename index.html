@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Morseovka - Převodník</title>
+    <link rel="icon" href="ikonka.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+<header>
+    <nav class="hlavni-menu">
+        <a href="index.html" class="aktivni">Převodník</a>
+        <a href="pravidla.html">Tabulka znaků</a>
+        <a href="historie.html">Historie</a>
+    </nav>
+</header>
+
+<main class="kontejner">
+    <h1>Převodník Morseovy abecedy</h1>
+    <p class="upozorneni-skola">Tento web je školní projekt za účelem závěrečné práce.</p>
+
+    <form id="prevodnikForm" onsubmit="return false;">
+        <div class="form-skupina">
+            <label for="vstupniText">Zadejte text nebo Morseův kód (oddělujte mezerou, slova lomítkem /):</label>
+            <textarea id="vstupniText" rows="5" placeholder="Ahoj / .- .... --- .---"></textarea>
+        </div>
+
+        <div class="tlacitka">
+            <button type="button" onclick="spustPrevod('toMorse')" class="tlacitko-hlavni">Do Morseovky</button>
+            <button type="button" onclick="spustPrevod('toText')" class="tlacitko-sekundarni">Do Textu</button>
+        </div>
+    </form>
+
+    <div class="vystup-sekce">
+        <h2>Výsledek:</h2>
+        <div id="vysledek" class="box-vysledek">Zde se zobrazí výsledek.</div>
+        <div id="chyba" class="box-chyba"></div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 Závěrečná práce z JavaScriptu. Školní projekt.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

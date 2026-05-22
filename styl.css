@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Menu */
+header {
+    background-color: #333333;
+}
+
+.hlavni-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.hlavni-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-weight: bold;
+}
+
+.hlavni-menu a:hover {
+    background-color: #555555;
+}
+
+.hlavni-menu a.aktivni {
+    background-color: #4CAF50;
+}
+
+/* Obsah */
+.kontejner {
+    flex: 1;
+    max-width: 750px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #cccccc;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+.upozorneni-skola {
+    font-style: italic;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+/* Formulář */
+.form-skupina {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999999;
+    font-size: 16px;
+}
+
+/* Tlačítka */
+.tlacitka {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+.tlacitko-hlavni {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.tlacitko-sekundarni {
+    background-color: #008CBA;
+    color: white;
+}
+
+/* Výstupy */
+.box-vysledek {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    margin-top: 10px;
+    min-height: 40px;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.box-chyba {
+    color: red;
+    background-color: #ffdddd;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid red;
+    display: none;
+}
+
+/* Tabulka */
+.tabulka-znaku {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tabulka-znaku th, .tabulka-znaku td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabulka-znaku th {
+    background-color: #f2f2f2;
+}
+
+.text-sekce h2 {
+    margin-top: 15px;
+}
+
+/* Patička */
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
